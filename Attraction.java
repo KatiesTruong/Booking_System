@@ -1,27 +1,17 @@
 /*
  * class Attraction
  * 
- * This code is the implementation of the Attraction class for CPT121 
- * Assignment 3 in SP2, 2017.
- * 
- * You are expected to work off this sample implementation of the Attraction
- * class - you *DO NOT* need to implement your own version of this class.
- * 
- * You may need to amend the functionality of this class to cater for exception
- * handling requirements in Stage 5 and perhaps for file handling functionality
- * in the bonus marks stage.
- * 
  */
 public class Attraction
 {
 
-   // Step 1: Define instance variables required for a Attraction
+   // Defines instance variables in Attraction
    private String attractionID;
    private String description;
    private double admissionFee;
    private int bookingCount;
 
-   // Step 2: Define a constructor that sets up a new Attraction
+   // Defines constructors
    public Attraction(String attractionID, String description, double admissionFee)
    {
       this.attractionID = attractionID;
@@ -29,7 +19,7 @@ public class Attraction
       this.admissionFee = admissionFee;
    }
 
-   // Step 3 - Define accessors (getters) for each instance variable
+   // Defines accessors (getters) for each instance variable
    public String getAttractionID()
    {
       return attractionID;
@@ -48,10 +38,7 @@ public class Attraction
    public int getBookingCount()
    {
       return bookingCount;
-   }
-
-   // Step 4: Define operations that can be performed on a Attraction
-   
+   } 
    // sellPasses()
    //
    // Attempts to add the specified number of tourists to the
@@ -110,8 +97,6 @@ public class Attraction
          return refundedFees;
       }
    }
-   
-   // Step 5: Define helper methods that we may need
    
    // calculateBookingCost()
    //
